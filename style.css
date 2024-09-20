@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(180, 100%, 69%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.header {
+    border: 3px solid black;
+    border-radius: 25px;
+    width: 300px;
+    height: 480px;
+    padding: 10px;
+    background: #87CEEB;
+}
+
+.header h2, h4 {
+    text-align: center;
+}
+
+.screen {
+    text-align: right;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    /* font-weight: 510; */
+    border: 5px solid gray;
+    border-radius: 8px;
+    margin: 5px 0;
+    background: #ADD8E6;
+}
+
+.screen .operation {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    /* border: 1px solid black; */
+    height: 27px;
+    box-sizing: border-box;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.screen .result:nth-child(2) {
+    font-size: 22px;
+    font-weight: 560;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    /* border: 1px solid red; */
+    height: 35px;
+    box-sizing: border-box;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.box {
+    height: 253px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.btn button{
+    width: 84px;
+    height: 40px;
+    outline: none;
+    background: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn #reset:nth-child(16),
+.btn #equal:nth-child(17) {
+    width: 131px;
+}
+
+.btn #sup:nth-child(17) {
+    width: 131px;
+}
+
+
+.btn #add:nth-child(11),
+.btn #substract:nth-child(12),
+.btn #multiply:nth-child(13),
+.btn #divide:nth-child(14),
+.btn #dot:nth-child(15),
+.btn #equal:nth-child(17) {
+    background: #FFA500;
+}
+
+.btn #reset:nth-child(16) {
+    background: #ff7F50;
+}
+
+button:active {
+    background: rgb(201, 201, 201);
+    /* transition: .9s; */
+}
